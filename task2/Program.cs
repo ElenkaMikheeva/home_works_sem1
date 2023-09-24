@@ -3,19 +3,19 @@ int max = 0;
 int min = 0;
 
 Console.Write("Введите первое число: ");
-int firstNumber = Convert.ToInt32(Console.ReadLine());
+int num1 = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите второе число: ");
-int secondNumber = Convert.ToInt32(Console.ReadLine());
+int num2 = Convert.ToInt32(Console.ReadLine());
 
-if(firstNumber > secondNumber)
+if(num1 > num2)
 {
-    max = firstNumber;
-    min = secondNumber;
+    max = num1;
+    min = num2;
 }
 else
 {
-    max = secondNumber;
-    min = firstNumber;
+    max = num2;
+    min = num1;
 }
 Console.WriteLine("max = " + max + " и " + "min = " + min);
